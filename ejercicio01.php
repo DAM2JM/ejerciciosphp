@@ -8,27 +8,25 @@ $array1[]="Ranfi";
 $array1[]="Javier";
 $array1[]="Rafa";
 
+$array2=array("Iker","Javier","Ursua","Iñaki","David");
+
 //volcamos la variable para estudiarla y depurar nuestro código. 
 //Con var_dump
-var_dump($array1);
 //O con print_r
-echo "<pre>";
-print_r($array1); 
-echo "</pre>";
-
+//echo "<pre>";
+//print_r($array1); 
+//secho "</pre>";
+echo "Modo 1";
+foreach ($array2 as $nombre ) {
+	echo "<br>".$nombre.".";
+	# code...
+}
+echo"<hr>";
+echo "Modo 2";
 for($x=0;$x<count($array1);$x++){
-	echo "	".$x." : ". $array1[$x];
+	echo "<br>	".$x." : ". $array1[$x];
 }
-/*
-//la podemos recorrer con el bucle foreach de dos maneras:
-echo "<hr> Recorrido mediante bucle foreach simple <br>";
-foreach ($array1 as $element){
-    echo $element . '<br>';
-}
-//foreach clave->elemento
-echo "<hr> Recorrido mediante bucle foreach con posicion->elemento <br>";
-foreach ($array1 as $position=>$element){
-    echo $position . ": " . $element . '<br>';
-}*/
+
+
 ?>
 </body></html>
