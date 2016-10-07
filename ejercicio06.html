@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio 06 </title>
+	</head>
+	<body>
+		<!--
+			Crear un formulario de registros de libros de una biblioteca. 
+			Tiene que hacer uso de todos los tipos básicos de input: 
+			- text, password, select, option, checkbox y submit
+		-->
+		<form action="ejercicio06.php" method="post">
+			<label>Usuario: <input type="text" name="user" /></label>
+			<br/>
+			<label>Contrase&ntilde;a: <input type="password" name="pass" /></label>
+			<br/>
+			<label for="categorias">Categor&iacute;as: </label>
+			<select id="categorias" name="categorias">
+				<option>Misterio</option>
+				<option>Aventura</option>
+				<option>Ciencia</option>
+				<option>Novelas</option>
+				<option>Mecánica</option>
+			</select>
+			<br/>
+			<label>Desea recibir notificaciones?<input type="checkbox" name="notificaciones"></label>
+			<br/>
+			<input type="submit">
+		</form>
+	</body>
+</html>
